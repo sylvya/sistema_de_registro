@@ -1,0 +1,51 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+.formulario{
+	border: 1px solid red;
+	width: 80%;
+	margin: 20pt auto;
+}
+	.form-sesion{
+		border: 1px solid black;
+		margin: 50pt auto;
+		text-align: center;
+		width: 30%;
+	}
+	.registrate{
+		text-align: center;	
+	}
+
+/*registro*/
+.seccion-registrate{
+	border: 1px solid red;
+	width: 80%;
+	margin: 20px auto;
+}
+	.titulo-registro{
+		font-size: 20pt;
+		text-align: center;
+		margin: 0;
+	}
+	.registro{
+		border: 1px solid black;
+		width: 60%;
+		margin: 20pt auto;
+
+	}
+	.bloque1,.bloque2{
+		border: 1px solid green;
+		vertical-align: top;
+		display: inline-block;
+		width: 49%;
+	}
+		.titulo-texto{
+			font-size: 20px;
+		}
+		.datos{
+			width: 95%;
+			margin: 5px 0;
+			padding: 5px;
+			font-size: 16px;
+		}
