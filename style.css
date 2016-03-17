@@ -6,46 +6,117 @@ body{
 	border: 1px solid red;
 	width: 80%;
 	margin: 20pt auto;
+	background: #f4fcf4;
 }
 	.form-sesion{
-		border: 1px solid black;
+		border: 1px solid #333;
+		border-radius: 4px;
 		margin: 50pt auto;
 		text-align: center;
 		width: 30%;
+		height: auto;
+		background: -webkit-radial-gradient(#fff, #B0FFB0);
+		background: -moz-radial-gradient(#fff, #B0FFB0);
+		
 	}
-	.registrate{
+	.bloque{
+		margin: 20pt 0;
+	}
+		.cuadro-texto{
+			padding: 5pt;
+			border: 1pt solid gray;
+			border-bottom: none;
+			border-right: none;
+			background: #ede8e8;
+			font-size: 14pt
+		}
+		.titulo-nombre{
+			font-size: 16pt;
+		}
+	.registrate,.btn-sesion{
 		text-align: center;	
+		font-size: 16pt;
+		padding: 3pt;
+		border-radius: 4pt;
+		
+
 	}
 
 /*registro*/
 .seccion-registrate{
-	border: 1px solid red;
 	width: 80%;
+	height: auto;
 	margin: 20px auto;
 }
 	.titulo-registro{
-		font-size: 20pt;
+		font-size: 18pt;
 		text-align: center;
-		margin: 0;
+		margin-top: 0;
+		padding: 10pt 0;
+
 	}
 	.registro{
-		border: 1px solid black;
+		border: 1px solid gray;
+		border-top: none;
 		width: 60%;
 		margin: 20pt auto;
+		background: #f2f2f2;
+		border-radius: 8px;
 
 	}
 	.bloque1,.bloque2{
-		border: 1px solid green;
 		vertical-align: top;
 		display: inline-block;
-		width: 49%;
+		width: 40%;
+		height: auto;
+		margin-top: 20pt;
+		margin-bottom: 20pt;
+		margin-left: 30pt;
+	}
+	.bloque1{
+		
+	}
+	.bloque2{
+		margin-right: 20pt;
 	}
 		.titulo-texto{
 			font-size: 20px;
+			font-family: arial;
 		}
 		.datos{
 			width: 95%;
-			margin: 5px 0;
 			padding: 5px;
 			font-size: 16px;
+			border: 1px solid #ccc;
+			background: #fff;
+			border-top: none;
+			border-left: none;
+			margin-top: 5px;
 		}
+		.boton-registro{
+			text-align: right;
+		}
+			.btn-registro{
+				font-size: 14pt;
+				padding: 5px 10px;
+				font-weight: bold;
+				border-radius: 4px;
+				margin-right: 5px;
+				border: 1px solid #333;
+			}
+/*INDEX1*/
+.general{
+	
+	margin: 0 auto;
+	width: 80%;
+}
+	.contenedor-interno{
+		
+		width: 100%;
+		text-align: center;
+	}
+		.bienvenido{
+			font-size: 30pt;
+			
+		}
+		

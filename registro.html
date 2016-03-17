@@ -7,27 +7,31 @@
 </head>
 <body>
 	<div class="seccion-registrate">
-		<h1 class="titulo-registro">Registro</h1>
-		<form action="#" class="registro">
+		
+		<form action="validar.php" method="POST" class="registro">
+			<h1 class="titulo-registro">Registro</h1>
 			<div class="bloque1">
 				<label class="titulo-texto" >Nombre</label><br>
-				<input type="text" class="datos"><br><br>
+				<input type="text" name="nombre" class="datos"><br><br>
 				<label class="titulo-texto" >Apellido Paterno</label><br>
-				<input type="text" class="datos"><br><br>
+				<input type="text" name="apellido_p" class="datos"><br><br>
 				<label class="titulo-texto" >Apellido Materno</label><br>
-				<input type="text" class="datos"><br><br>
+				<input type="text" name="apellido_m" class="datos"><br><br>
 				<label class="titulo-texto" >Correo</label><br>
-				<input type="text" class="datos"><br><br>
+				<input type="email" name="correo" class="datos">
 			</div>
 			<div class="bloque2">
 				<label class="titulo-texto" >Usuario</label><br>
-				<input type="text" class="datos"><br><br>
+				<input type="text" name="usuario" class="datos"><br><br>
 				<label class="titulo-texto" >Contraseña</label><br>
-				<input type="text" class="datos"><br><br>
+				<input type="password" name="contrasena" class="datos"><br><br>
 				<label class="titulo-texto" >Repetir Contraseña</label><br>
-				<input type="text" class="datos"><br><br><br><br>
-				<input type="submit" name="btn-registro" value="Enviar">
+				<input type="password" name="contrasena2" class="datos"><br><br><br>
+				<div class="boton-registro">
+				<input type="submit" name="btn-registro" value="Enviar" class="btn-registro">
 			</div>
+			</div>
+
 
 		</form>
 	</div>
