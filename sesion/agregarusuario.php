@@ -1,5 +1,12 @@
 <?php 
-include("conectar.php");
+	session_start();
+	if (!isset($_SESSION["nombreusuario"])) {
+    	echo '<script type="text/javascript">
+				window.location="../index.html";
+			</script>';
+	}
+	include("../conectar.php");
+
 	if (isset($_POST['nombre']) && !empty($_POST['nombre'])&&
 		isset($_POST['apellido_p']) && !empty($_POST['apellido_p'])&&
 		isset($_POST['apellido_m']) && !empty($_POST['apellido_m'])&&

@@ -1,4 +1,5 @@
-<?php 
+
+	<?php 
 	session_start();
 	include("conectar.php");
 
@@ -14,8 +15,20 @@
 
 		if ($name_user=="") {
 			echo "Debes ingresar un nombre de usuario";
+			echo '<script type="text/javascript">
+				function redireccionar(){
+				  window.location="index.html";
+				}
+				setTimeout ("redireccionar()", 5000);
+				</script>';
 		}else if ($pass=="") {
 			echo "Debes ingresar una contraseña válida.";
+			echo '<script type="text/javascript">
+				function redireccionar(){
+				  window.location="index.html";
+				}
+				setTimeout ("redireccionar()", 5000);
+				</script>';
 
 		}else{
 			
@@ -32,6 +45,12 @@
 
 			if ($row==0) {
 				echo "El usuario no esta registrado o los datos son incorrectos";
+				echo '<script type="text/javascript">
+				function redireccionar(){
+				  window.location="index.html";
+				}
+				setTimeout ("redireccionar()", 5000);
+				</script>';
 			}else{
 				//$sesion=mysql_fetch_assoc($consulta_sesion);
 				//echo "sesion: ".$sesion['USUARIO']."<br>";
@@ -39,10 +58,11 @@
 				//var_dump($sesion);
 				//echo "todo bien";
 				$array=mysql_fetch_array($consulta_sesion);
-				$SESSION['$name_user']=$array['$name_user'];
-				$SESSION['$pass']=$array['$pass'];
+				$_SESSION['nombreusuario']=$array['USUARIO'];
+				$_SESSION['correo']=$array['CORREO'];
+				$_SESSION['imagen']=$array['IMAGEN'];
 
-				header("Location:index1.html");
+				header("Location:sesion/index.php");
 			}
 			
 
@@ -50,6 +70,12 @@
 		}
 	}else{
 		echo "Todos los campos son requeridos";
+		echo '<script type="text/javascript">
+				function redireccionar(){
+				  window.location="index.html";
+				}
+				setTimeout ("redireccionar()", 5000);
+				</script>';
 	}
 
 

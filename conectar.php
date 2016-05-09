@@ -1,6 +1,6 @@
 <?php
 	$host="localhost";
 	$user="root";
-	$password="kasumy261211";
+	$password="";
 	$db="sistema_de_registro";
  ?>
